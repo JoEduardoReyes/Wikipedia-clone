@@ -1,19 +1,24 @@
 :root {
   --blue-main: #3366cc;
   --font-main-color: #54595d;
+  --pagging-row1: 120px;
 }
 
-body {
+body,
+p {
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
   color: var(--font-main-color);
+  font-size: 12px;
 }
 
 h2 {
   color: var(--blue-main);
   font-weight: bold;
+  margin: 0;
+  margin-bottom: 5px;
 }
 
 .main-logo {
@@ -24,6 +29,8 @@ h2 {
   justify-content: center;
 }
 
+/* Main section */
+
 main {
   display: flex;
   justify-content: center;
@@ -33,4 +40,23 @@ main {
   height: 546px;
   width: 325;
   margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.lang {
+  text-align: center;
+}
+
+.lang-row1,
+.lang-row2,
+.lang-row3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.en {
+  margin-left: var(--pagging-row1);
 }
