@@ -1,0 +1,36 @@
+:root {
+  --blue-main: #3366cc;
+  --font-main-color: #54595d;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  color: var(--font-main-color);
+}
+
+h2 {
+  color: var(--blue-main);
+  font-weight: bold;
+}
+
+.main-logo {
+  margin: 0px auto;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.languajes {
+  height: 546px;
+  width: 325;
+  margin: 0px auto;
+}
