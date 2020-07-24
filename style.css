@@ -1,7 +1,9 @@
 :root {
   --blue-main: #3366cc;
   --font-main-color: #54595d;
-  --pagging-row1: 120px;
+  --pagging-row1: 150px;
+  --pagging-row2: 240px;
+  --pagging-row3: 280px;
 }
 
 body,
@@ -37,13 +39,15 @@ main {
 }
 
 .languajes {
-  height: 546px;
-  width: 325;
+  height: 325px;
   margin: 0px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 5px 0;
+  background-image: url("https://i.ibb.co/XbdrtWc/Wikipedia-logo-v2.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .lang {
@@ -53,10 +57,26 @@ main {
 .lang-row1,
 .lang-row2,
 .lang-row3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
 }
 
 .en {
   margin-left: var(--pagging-row1);
+}
+
+.ja {
+  margin-left: var(--pagging-row2);
+}
+
+.ru {
+  margin-left: var(--pagging-row3);
+}
+
+.zh {
+  padding-left: var(--pagging-row2);
+}
+
+.pl {
+  padding-left: var(--pagging-row1);
 }
