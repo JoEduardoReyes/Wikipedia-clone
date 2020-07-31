@@ -90,6 +90,7 @@ main {
 /* Search bar */
 
 .search-bar {
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,4 +141,14 @@ main {
 
 .search-icon:hover {
   background-color: #447ff5;
+}
+
+.search-icon:focus,
+.search-lang:focus {
+  outline: none;
+}
+
+.lang-selection {
+  margin: 50px 0px;
+  display: flex;
 }
