@@ -1,6 +1,7 @@
 :root {
   --blue-main: #3366cc;
   --font-main-color: #54595d;
+  --border-color: #c8ccd1;
   --pagging-row1: 150px;
   --pagging-row2: 270px;
   --pagging-row3: 300px;
@@ -149,6 +150,41 @@ main {
 }
 
 .lang-selection {
-  margin: 50px 0px;
+  margin: 20px 0px;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.lang-selection hr {
+  height: 1px;
+  width: 100px;
+  background-color: var(--border-color);
+  margin: 0px 20px;
+  border: none;
+}
+
+.lang-selection-button {
+  display: flex;
+  flex-direction: row;
+  padding: 6px 12px;
+  border: solid 1px var(--border-color);
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  font-size: 14px;
+  color: var(--blue-main);
+  cursor: pointer;
+}
+
+.lang-selection-button p {
+  padding: 0px 6px;
+  font-size: inherit;
+  color: inherit;
+  font-weight: bold;
+}
+
+.lang-selection-button:hover {
+  background-color: #fff;
 }
