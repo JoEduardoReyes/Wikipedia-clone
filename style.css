@@ -7,14 +7,20 @@
   --pagging-row3: 300px;
 }
 
-body,
-p {
+body {
   padding: 10px;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
   color: var(--font-main-color);
   font-size: 11px;
+}
+
+p {
+  font-size: inherit;
+  color: inherit;
+  padding: 0;
+  margin: 0;
 }
 
 h2 {
@@ -180,11 +186,37 @@ main {
 
 .lang-selection-button p {
   padding: 0px 6px;
-  font-size: inherit;
-  color: inherit;
   font-weight: bold;
 }
 
 .lang-selection-button:hover {
   background-color: #fff;
+}
+
+.hr-logo {
+  background-color: var(--border-color);
+  border: none;
+  height: 1px;
+  width: 98%;
+}
+/* Footer Logos Grid */
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+}
+
+.row-1 {
+  width: 20%;
+  font-size: 13px;
+}
+
+.wikimedia,
+.wiki-download {
+  display: flex;
+}
+.row-1 img {
+  height: 50px;
 }
